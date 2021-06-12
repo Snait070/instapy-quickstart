@@ -3,8 +3,8 @@ from instapy import InstaPy
 from instapy import smart_run
 
 # login credentials
-insta_username = ''
-insta_password = ''
+insta_username = 'borge_seb'
+insta_password = 'gtasan21070'
 
 comments = ['Nice shot! @{}',
         'I love your profile! @{}',
@@ -26,10 +26,10 @@ session = InstaPy(username=insta_username,
 with smart_run(session):
   """ Activity flow """		
   # general settings		
-  session.set_dont_include(["friend1", "friend2", "friend3"])		
+  session.set_dont_include(["jorge20", "tialucia", "morangos"])		
   
   # activity		
-  session.like_by_tags(["natgeo"], amount=10)
+  session.like_by_tags(["casas"], amount=10)
 
   # Joining Engagement Pods
   session.set_do_comment(enabled=True, percentage=35)
